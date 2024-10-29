@@ -13,6 +13,21 @@
         android:theme="@style/Theme.QuizDroid"
         tools:targetApi="31">
         <activity
+            android:name=".MathAnswerPageTwo"
+            android:exported="false" />
+        <activity
+            android:name=".MathAnswerPageOne"
+            android:exported="false" />
+        <activity
+            android:name=".AnswerPage"
+            android:exported="false" />
+        <activity
+            android:name=".MathQuestionTwo"
+            android:exported="false" />
+        <activity
+            android:name=".MathQuestionOne"
+            android:exported="false" />
+        <activity
             android:name=".MarvelActivity"
             android:exported="false" />
         <activity
