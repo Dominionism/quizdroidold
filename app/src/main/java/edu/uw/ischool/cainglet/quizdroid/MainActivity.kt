@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     private val model = listOf("Math", "Physics", "Marvel Superheroes")
     private lateinit var quizTopics: ListView
+    private var currentScore = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +27,8 @@ class MainActivity : AppCompatActivity() {
                 "Physics" -> topicActivity = Intent(this, PhysicsActivity::class.java)
                 "Marvel Superheroes" -> topicActivity = Intent(this, MarvelActivity::class.java)
             }
+
+            topicActivity.putExtra("score", currentScore)
             startActivity(topicActivity)
         }
     }
