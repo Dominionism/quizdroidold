@@ -15,8 +15,6 @@ class MathActivity : AppCompatActivity() {
         setContentView(R.layout.activity_math)
 
         val score = intent.getIntExtra("score", 0)
-//        val textView: TextView = findViewById(R.id.math_text)
-//        updatedScore++
 
         val mathDescription: TextView = findViewById((R.id.math_description_text))
         mathDescription.text = "The math category focuses on simple arithmetic problems."

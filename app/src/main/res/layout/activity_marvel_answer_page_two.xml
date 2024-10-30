@@ -5,34 +5,50 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MarvelActivity">
+    tools:context=".MarvelAnswerPageTwo">
 
     <TextView
-        android:id="@+id/marvel_description_text"
+        android:id="@+id/marvel_question_chosen_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="205dp" />
 
     <TextView
-        android:id="@+id/marvel_number_questions"
+        android:id="@+id/marvel_question_correct_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/marvel_description_text" />
+        app:layout_constraintTop_toBottomOf="@+id/marvel_question_chosen_answer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/marvel_question_current_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marvel_question_correct_answer"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/marvel_begin_button"
+        android:id="@+id/marvel_answer_page_two_finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/begin"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/marvel_number_questions"
+        app:layout_constraintTop_toBottomOf="@+id/marvel_question_current_score"
         app:layout_constraintVertical_bias="0.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

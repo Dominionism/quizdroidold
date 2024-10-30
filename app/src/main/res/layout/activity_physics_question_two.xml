@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MathQuestionOne">
+    tools:context=".PhysicsQuestionTwo">
 
     <TextView
-        android:id="@+id/math_question_one_text"
+        android:id="@+id/physics_question_two_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,50 +17,50 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:id="@+id/math_radio_group"
+        android:id="@+id/physics_radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/math_question_one_text"
+        app:layout_constraintTop_toBottomOf="@+id/physics_question_two_text"
         app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
-            android:id="@+id/math_option_one"
+            android:id="@+id/physics_option_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_1" />
+            android:text="Gravity" />
 
         <RadioButton
-            android:id="@+id/math_option_two"
+            android:id="@+id/physics_option_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_100" />
+            android:text="Black Magic" />
 
         <RadioButton
-            android:id="@+id/math_option_three"
+            android:id="@+id/physics_option_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_4" />
+            android:text="Alien Intervention" />
 
         <RadioButton
-            android:id="@+id/math_option_four"
+            android:id="@+id/physics_option_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_5" />
+            android:text="Air" />
     </RadioGroup>
 
     <Button
-        android:id="@+id/math_first_question_submit"
+        android:id="@+id/physics_second_question_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/math_radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/physics_radio_group"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

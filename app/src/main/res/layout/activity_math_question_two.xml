@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:id="@+id/radio_group"
+        android:id="@+id/math_radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,25 +28,25 @@
         app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
-            android:id="@+id/math_two_option_one"
+            android:id="@+id/math_option_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_40" />
 
         <RadioButton
-            android:id="@+id/math_two_option_two"
+            android:id="@+id/math_option_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_75" />
 
         <RadioButton
-            android:id="@+id/math_two_option_three"
+            android:id="@+id/math_option_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_23" />
 
         <RadioButton
-            android:id="@+id/math_two_option_four"
+            android:id="@+id/math_option_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_8" />
@@ -60,6 +60,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/math_radio_group"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

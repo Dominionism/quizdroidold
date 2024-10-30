@@ -8,30 +8,30 @@ import android.widget.RadioButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-class MathQuestionTwo : AppCompatActivity() {
+class MarvelQuestionOne : AppCompatActivity() {
     private lateinit var submitButton: Button
-    private lateinit var question: TextView
     private lateinit var optionOne: RadioButton
     private lateinit var optionTwo: RadioButton
     private lateinit var optionThree: RadioButton
     private lateinit var optionFour: RadioButton
+    private lateinit var question: TextView
     private lateinit var selectedButton: RadioButton
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_math_question_two)
+        setContentView(R.layout.activity_marvel_question_one)
         var score = intent.getIntExtra("score", 0)
 
-        question = findViewById(R.id.question_two_text)
-        question.text = "4 + 4"
-        val correctAnswer = "8"
+        question = findViewById(R.id.marvel_question_text)
+        question.text = "Which superhero wields a hammer?"
+        val correctAnswer = "Thor"
 
-        optionOne = findViewById(R.id.math_option_one)
-        optionTwo = findViewById(R.id.math_option_two)
-        optionThree = findViewById(R.id.math_option_three)
-        optionFour = findViewById(R.id.math_option_four)
+        optionOne = findViewById(R.id.marvel_option_one)
+        optionTwo = findViewById(R.id.marvel_option_two)
+        optionThree = findViewById(R.id.marvel_option_three)
+        optionFour = findViewById(R.id.marvel_option_four)
 
-        submitButton = findViewById(R.id.math_second_question_submit)
+        submitButton = findViewById(R.id.marvel_question_submit)
         submitButton.isEnabled = false
 
         optionOne.setOnClickListener {
@@ -59,7 +59,7 @@ class MathQuestionTwo : AppCompatActivity() {
                 score += 1
             }
 
-            val answerPage = Intent(this, MathAnswerPageTwo::class.java)
+            val answerPage = Intent(this, MarvelAnswerPageOne::class.java)
             answerPage.putExtra("score", score)
             answerPage.putExtra("chosen", selectedButton.text)
             answerPage.putExtra("answer", correctAnswer)
