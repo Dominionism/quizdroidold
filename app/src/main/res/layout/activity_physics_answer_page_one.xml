@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MarvelActivity">
+    tools:context=".PhysicsAnswerPageOne">
 
     <TextView
-        android:id="@+id/marvel_description_text"
+        android:id="@+id/physics_question_chosen_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,22 +17,37 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/marvel_number_questions"
+        android:id="@+id/physics_question_correct_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/marvel_description_text" />
+        app:layout_constraintTop_toBottomOf="@+id/physics_question_chosen_answer"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/marvel_begin_button"
+        android:id="@+id/physics_answer_page_one_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/begin"
+        android:layout_marginBottom="136dp"
+        android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/marvel_number_questions"
+        app:layout_constraintTop_toBottomOf="@+id/physics_question_current_score"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/physics_question_current_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/physics_question_correct_answer"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

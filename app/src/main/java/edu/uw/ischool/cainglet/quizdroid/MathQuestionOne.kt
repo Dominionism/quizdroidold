@@ -22,14 +22,14 @@ class MathQuestionOne : AppCompatActivity() {
         setContentView(R.layout.activity_math_question_one)
         var score = intent.getIntExtra("score", 0)
 
-        question = findViewById(R.id.question_one_text)
+        question = findViewById(R.id.math_question_one_text)
         question.text = "2 + 2"
         val correctAnswer = "4"
 
-        optionOne = findViewById(R.id.math_two_option_one)
-        optionTwo = findViewById(R.id.math_two_option_two)
-        optionThree = findViewById(R.id.math_two_option_three)
-        optionFour = findViewById(R.id.math_two_option_four)
+        optionOne = findViewById(R.id.math_option_one)
+        optionTwo = findViewById(R.id.math_option_two)
+        optionThree = findViewById(R.id.math_option_three)
+        optionFour = findViewById(R.id.math_option_four)
 
         submitButton = findViewById(R.id.math_first_question_submit)
         submitButton.isEnabled = false

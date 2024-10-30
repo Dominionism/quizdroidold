@@ -18,4 +18,15 @@
     <string name="math_two_question_two_chosen_answer">TextView</string>
     <string name="math_two_question_two_correct_answer">TextView</string>
     <string name="math_two_question_two_current_score">TextView</string>
+    <string name="physics_begin_button">Button</string>
+    <string name="physics_description_text">TextView</string>
+    <string name="physics_number_questions">TextView</string>
+    <string name="because_helium_is_much_lighter_than_air">Because helium is much lighter than air.</string>
+    <string name="because_it_was_decided_by_the_universe">Because it was decided by the universe.</string>
+    <string name="because_balloons_were_invented_by_aliens">Because balloons were invented by aliens.</string>
+    <string name="because_air_is_lighter_than_helium">Because air is lighter than helium.</string>
+    <string name="thor">Thor</string>
+    <string name="hulk">Hulk</string>
+    <string name="spiderman">Spiderman</string>
+    <string name="iron_man">Iron Man</string>
 </resources>
